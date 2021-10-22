@@ -161,7 +161,10 @@ a {
 
   .welcome {
     height: 100vh;
-    background: transparent url("../assets/images/Mask Group 2.png") 0% 0% no-repeat padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 55% top 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/Mask Group 2.png");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,7 +186,7 @@ a {
   .welcome .nav-wrapper .nav-links a {
     margin-right: 20px;
     font-size: 14px;
-    color: #CACCD5;
+    color: #FFFFFF;
     padding-bottom: 32px;
   }
   .welcome .nav-wrapper .nav-links a:hover {
@@ -815,7 +818,7 @@ a {
   }
   .objectives .objectives-content :nth-child(4) {
     position: absolute;
-    bottom: 4vw;
+    bottom: 2vw;
     right: -5vw;
   }
   .objectives .objectives-content .objective {

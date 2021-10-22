@@ -17,7 +17,11 @@
 
     .welcome{
         height: 100vh;
-        background: transparent url('../assets/images/Mask\ Group\ 2.png') 0% 0% no-repeat padding-box;
+        // background: transparent url('../assets/images/Mask\ Group\ 2.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left 55% top 10%;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200) ), url('../assets/images/Mask\ Group\ 2.png');
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -36,7 +40,7 @@
                 a{
                     margin-right: 20px;
                     font-size: 14px;
-                    color: $COLORS_GRAYd1;
+                    color: $COLORS_TEXT;
                     padding-bottom: 32px;
                     &:hover{
                         color: $COLORS_PRIMARYd5;
