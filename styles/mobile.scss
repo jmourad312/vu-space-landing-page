@@ -31,6 +31,15 @@
                 margin-top: 40px;
                 color: $COLORS_TEXT;
                 font-size: 34px;
+                svg{
+                    width: 240px;
+                    .st1{
+                        fill: $COLORS_PRIMARYd5;
+                    }
+                    .st0{
+                        fill: $COLORS_TEXT;
+                    }
+                }
             }
             .nav-links{
                 display: none;
@@ -135,6 +144,7 @@
                 font-size: 36px;
                 font-weight: bold;
                 margin-bottom: 40px;
+                line-height: 1.2;
             }
             .bordered{
                 margin-bottom: 30px;
@@ -147,6 +157,7 @@
                 .point-header{
                     font-size: 24px;
                     margin-bottom: 20px;
+                    line-height: 1.2;
                 }
                 .point-body{
                     padding-bottom: 30px;
@@ -157,7 +168,7 @@
         .img-wrapper{
             order: 1;
             img{
-                height: 540px;
+                max-height: 540px;
                 max-width: 100%;
             }
         }
@@ -201,6 +212,7 @@
                 .point-title{
                     font-size: 24px;
                     margin-bottom: 20px;
+                    line-height: 1.2;
                 }
                 .point-body{
                     font-size: 18px;
@@ -374,8 +386,15 @@
                 height: 66px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
+                cursor: pointer;
+                padding: 0 20px;
                 margin-bottom: 15px;
+                svg{
+                    width: 28px;
+                    height: 28px;
+                    
+                }
             }
         }
     }

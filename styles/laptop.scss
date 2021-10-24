@@ -32,7 +32,16 @@
             justify-content: space-around;
             .nav-title{
                 color: $COLORS_TEXT;
-                font-size: 24px;
+                svg{
+                    width: 200px;
+                    height: 40px;
+                    .st1{
+                        fill: $COLORS_PRIMARYd5;
+                    }
+                    .st0{
+                        fill: $COLORS_TEXT;
+                    }
+                }
             }
             .nav-links{
                 a{
@@ -72,6 +81,8 @@
         justify-content: space-around;
         .content{
             flex-basis: 40%;
+            margin-top: 50px;
+            margin-bottom: 50px;
             span{
                 color: $COLORS_PRIMARYd5;
                 font-size: 64px;
@@ -310,24 +321,24 @@
         display: flex;
         justify-content: space-evenly;
         .left-cards{
-            flex-basis: 20%;
+            flex-basis: 25%;
             margin-top: 40px;
             margin-bottom: 40px;
         }
         .right-cards{
-            flex-basis: 20%;
+            flex-basis: 25%;
             margin-top: 40px;
         }
         .app-background{
-            flex-basis: 50%;
+            flex-basis: 40%;
             // background: transparent url('../assets/images/Mobile-Features.png') 0% 0% no-repeat padding-box;
             text-align: center;
             font-size: 64px;
             padding-top: 40px;
             color: $COLORS_PRIMARYd5;
             img{
-                width: 100%;
-                height: 100%;
+                width: 90%;
+                height: 90%;
                 object-fit: cover;
             }
         }
@@ -372,20 +383,26 @@
             color: $COLORS_TEXT;
             line-height: 1.7;
             font-size: 32px;
-            flex-basis: 65%;
+            flex-basis: 60%;
         }
         .cto-buttons{
-            flex-basis: 20%;
+            flex-basis: 30%;
             display: flex;
             flex-direction: column;
             .cto-button{
                 &:first-of-type{
                     margin-bottom: 10px;
                 }
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                min-width: 335px;
+                height: 66px;
                 font-size: 26px;
                 background-color: $COLORS_PRIMARYd5;
                 border-radius: 5px;
                 padding: 10px 20px;
+                cursor: pointer;
             }
         }
     }
