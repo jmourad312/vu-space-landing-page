@@ -1,4 +1,4 @@
-@media (min-width: #{$breakpoint_tablet_portrait}) and (max-width: #{$breakpoint_tablet_landscape}) {
+@media (min-width: #{$breakpoint_tablet_portrait}) and (max-width: #{$breakpoint_tablet_landscape - 1px}) {
     html{
         scroll-behavior: smooth;
         &::-webkit-scrollbar {

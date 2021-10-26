@@ -1,4 +1,4 @@
-@media (min-width: #{$breakpoint_laptop}) and (max-width: #{$breakpoint_desktop}) {
+@media (min-width: #{$breakpoint_laptop}) and (max-width: #{$breakpoint_desktop - 1px}) {
     html{
         scroll-behavior: smooth;
         &::-webkit-scrollbar {
@@ -319,24 +319,36 @@
         color: $COLORS_GRAYd1;
         background: transparent linear-gradient(299deg, #000000 0%, $COLORS_BACKGROUNDd1 100%) 0% 0% no-repeat padding-box;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         .left-cards{
-            flex-basis: 25%;
+            flex-basis: 30%;
             margin-top: 40px;
             margin-bottom: 40px;
+            z-index: 2;
         }
         .right-cards{
-            flex-basis: 25%;
+            flex-basis: 30%;
             margin-top: 40px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
         .app-background{
-            flex-basis: 40%;
+            flex-basis: 29%;
             // background: transparent url('../assets/images/Mobile-Features.png') 0% 0% no-repeat padding-box;
             text-align: center;
             font-size: 64px;
-            padding-top: 40px;
             color: $COLORS_PRIMARYd5;
+            .title{
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
             img{
+                margin-top: -50px;
+                position: absolute;
+                right: 3.5%;
+                z-index: 1;
                 width: 90%;
                 height: 90%;
                 object-fit: cover;
