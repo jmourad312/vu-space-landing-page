@@ -94,7 +94,7 @@
                 color: $COLORS_GRAYd1;
                 max-width: 674px;
                 height: 209px;
-                line-height: 1.5;
+                line-height: 1.7;
                 margin-bottom: 50px;
             }
         }
@@ -173,10 +173,12 @@
                 .point-header{
                     flex-basis: 30%;
                     font-size: 28px;
+                    line-height: 1.1;
                 }
                 .point-body{
                     font-size: 20px;
                     flex-basis: 60%;
+                    line-height: 1.3;
                 }
             }
         }
