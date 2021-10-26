@@ -289,27 +289,27 @@
         .objectives-content{
             & :nth-child(1){
                 position: absolute;
-                bottom: 4vw;
-                left: -5vw;
+                bottom: 0vw;
+                left: -3vw;
             }
             & :nth-child(2){
                 position: absolute;
-                bottom: -4vw;
-                left: 21vw;
+                bottom: -6vw;
+                left: 20vw;
             }
             & :nth-child(3){
                 position: absolute;
-                bottom: -7vw;
-                right: 19vw;
+                bottom: -6vw;
+                right: 18vw;
             }
             & :nth-child(4){
                 position: absolute;
-                bottom: 2vw;
-                right: -5vw;
+                bottom: 0vw;
+                right: -4vw;
             }
             .objective{
                 font-size: 1.7vw;
-                max-width: 20vw;
+                max-width: 17vw;
                 line-height: 1.6;
                 text-align: center;
             }
