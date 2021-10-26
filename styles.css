@@ -424,7 +424,7 @@ a {
   .objectives .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .objectives .objectives-content :nth-child(1) {
     position: absolute;
