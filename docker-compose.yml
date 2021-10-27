@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  mhd-portal:
+  vu-space-landing-page:
     build:
       context: .
       dockerfile: Dockerfile
-    image: mhd-portal
-    container_name: mhd-portal
+    image: vu-space-landing-page
+    container_name: vu-space-landing-page
     ports:
       - 5000:5000
     restart: unless-stopped
