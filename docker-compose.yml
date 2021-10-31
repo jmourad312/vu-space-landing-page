@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  vu-space-landing-page:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vu-space-landing-page
+    container_name: vu-space-landing-page
+    ports:
+      - 5000:5000
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: ${HOST}
+      VIRTUAL_PORT: 5000
+      LETSENCRYPT_HOST: ${HOST}
+      LETSENCRYPT_EMAIL: mohamedamal680@gmail.com
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
