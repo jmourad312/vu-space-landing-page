@@ -45,18 +45,6 @@
                 display: none;
             }
         }
-        .welcome-message{
-            position: absolute;
-            bottom: 10px;
-            left: 5%;
-            width: calc( 100vw - 80px);
-            font-size: 50px;
-            text-align: center;
-            color: $COLORS_TEXT;
-            span{
-                color: $COLORS_PRIMARYd5;
-            }
-        }
     }
 
     .who-we-are{
